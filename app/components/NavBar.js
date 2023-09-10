@@ -41,9 +41,9 @@ export default function NavBar() {
         <Navbar.Brand href="#home">
           <Image src='/logo@2x.png' width={69} height={63} alt='' />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle label='hello' aria-controls="basic-navbar-nav" />
       </div>
-      <div className='w-full'>
+      <div className='container'>
         <Navbar.Collapse className='bg-slate-100' id="basic-navbar-nav">
           <Nav className="mx-auto w-full lg:justify-center text-[16px] font-semibold uppercase">
             {navData.map((item, index) => {
