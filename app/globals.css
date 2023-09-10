@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+
+}
+input {
+  @apply border-2 px-2 py-1 rounded-sm
+}
+
+.dropdown:hover .dropdown-menu {
+  @apply lg:block
+}
+#basic-nav-dropdown::after {
+  display: none;
+}
+
+.dropdown-menu { 
+  @apply pt-0 mt-0;
+}
+
+
+
+.fix-portfolio .isotope {
+  margin-bottom: -10px;
+  margin-right: -10px;
+}
+.classic-masonry .isotope {
+  margin-bottom: -10px;
+  margin-right: -10px;
+}
+.isotope:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.isotope .item {
+  float: left
+}
+.fix-portfolio .isotope .item {
+  width: 25%;
+  height: 200px;
+  padding: 0 10px 10px 0;
+}
+.classic-masonry .isotope .item {
+  width: 33.3339%;
+  height: auto;
+  padding: 0 10px 10px 0;
+}
+.full-portfolio .isotope .item,
+.full-portfolio .isotope .grid-sizer {
+  width: 20%
+}
+.fix-portfolio .isotope .item.width2 {
+  width: 50%
+}
+.fix-portfolio .isotope .item.height2 {
+  height: 400px
+}
+.classic-masonry figure img,
+.fix-portfolio figure img {
+  width: 100%
+}
+.button-group:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.button-group .button {
+  float: left
+}
+.button-group .button {
+  display: inline-block;
+  background: none;
+  border: none;
+  color: #4e4e4e;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 0;
+  margin-left: 15px;
+  -webkit-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+}
+.button-group .button:before {
+  content: "/";
+  display: inline-block;
+  padding-right: 15px;
+  color: #a5a5a5;
+}
+.button-group .button:first-child:before {
+  display: none
+}
+.button-group .button:hover,
+.button-group .button:active,
+.button-group .button.is-checked {
+  color: #57a4a4
+}
