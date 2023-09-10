@@ -7,11 +7,11 @@ export default function Slideshow() {
     <div className='container py-5'>
     <Carousel className=''>
     <Carousel.Item>
-        <Image className='d-block w-100 aspect-video' src='/images/slider-bg1.jpeg' alt=''/>
+        <Image className='zoomout d-block w-100 aspect-video' src='/images/slider-bg1.jpeg' alt=''/>
     </Carousel.Item>
     <Carousel.Item className='relative'>
         {/* <Image className='d-block w-100 aspect-video z-0' src='/images/slider-bg2.jpeg' alt=''/> */}
-        <video loop autoPlay={true} muted className='d-block w-100 aspect-video'>
+        <video loop autoPlay={true} muted className='d-block w-100 aspect-video' poster='images/slider-bg2.jpeg'>
             <source src='images/joris_schaap--dragonfly_in_ultra_slow_motion.mp4' type='video/mp4'/>
             <source src='images/joris_schaap--dragonfly_in_ultra_slow_motion.webm' type='video/webm'/>
         </video>
